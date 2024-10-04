@@ -1,0 +1,83 @@
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum InputFormat {
+    Binary,
+    Text,
+    JSON,
+    XML,
+    Custom(String),
+
+    Format1,
+    Format2,
+    Format3,
+    Format4,
+    Format5,
+    Format6,
+    Format7,
+    Format8,
+    Format9,
+    Format10,
+    Format11,
+    Format12,
+    Format13,
+    Format14,
+    Format15,
+    Format16,
+    Format17,
+    Format18,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum FuzzMode {
+    Random,
+    Mutation,
+    Generation,
+    Hybrid,
+    Custom(String),
+
+    Mode1,
+    Mode2,
+    Mode3,
+    Mode4,
+    Mode5,
+    Mode6,
+    Mode7,
+    Mode8,
+    Mode9,
+    Mode10,
+    Mode11,
+    Mode12,
+    Mode13,
+    Mode14,
+    Mode15,
+    Mode16,
+    Mode17,
+    Mode18,
+}
+
+#[derive(Debug, Clone, Hash, PartialEq, Eq)]
+pub enum ExecutionResult {
+    Success,
+    Crash(String),
+    Timeout,
+    Error(String),
+    Result1,
+    Result2,
+    Result3,
+    Result4,
+    Result5,
+    Result6,
+    Result7,
+    Result8,
+    Result9,
+    Result10,
+    Result11,
+    Result12,
+    Result13,
+    Result14,
+    Result15,
+    Result16,
+    Result17,
+    Result18,
+}
