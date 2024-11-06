@@ -16,8 +16,8 @@ use tokio::time::{timeout, Duration};
 #[derive(Clone)]
 pub struct Fuzzer {
     config: Arc<FuzzerConfig>,
-    input_generator: InputGenerator,
-    mutator: Mutator,
+    pub input_generator: InputGenerator,
+    pub mutator: Mutator,
     analyzer: Analyzer,
     targets: Vec<TargetFunction>,
     stats: Arc<Mutex<FuzzerStats>>,
@@ -34,7 +34,7 @@ pub struct FuzzerStats {
     pub total_crashes: usize,
     pub total_time: Duration,
     pub inputs_tested: usize,
-
+    // Additional statistics can be added here
 }
 
 impl Fuzzer {
@@ -196,7 +196,7 @@ impl Fuzzer {
         println!("Total crashes: {}", stats.total_crashes);
         println!("Inputs tested: {}", stats.inputs_tested);
         println!("Elapsed time: {:?}", elapsed);
-       
+        // Additional statistics can be printed here
         println!("==============================");
     }
 
