@@ -10,7 +10,7 @@ pub mod input;
 pub mod logger;
 pub mod mutator;
 pub mod mutator_options;
-pub mod plugin;
+
 pub mod reproducer;
 pub mod target;
 pub mod utils;
