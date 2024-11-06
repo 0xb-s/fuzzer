@@ -6,6 +6,8 @@ pub enum InputFormat {
     Text,
     JSON,
     XML,
+    CSV,
+    Protobuf,
     Custom(String),
 
     Format1,
