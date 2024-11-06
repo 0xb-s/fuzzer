@@ -17,4 +17,7 @@ pub enum FuzzerError {
 
     #[error("Custom error: {0}")]
     CustomError(String),
+
+    #[error("Reproduction failled: {0}")]
+    ReproductionFailed(String),
 }
