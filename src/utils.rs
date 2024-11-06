@@ -58,7 +58,7 @@ pub enum FuzzMode {
     Mode18,
 }
 
-#[derive(Debug, Clone, Hash, PartialEq, Eq)]
+#[derive(Debug, Clone, Hash, PartialEq, Eq, Serialize, Deserialize)]
 pub enum ExecutionResult {
     Success,
     Crash(String),
