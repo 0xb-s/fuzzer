@@ -7,3 +7,4 @@
 - [Configuration](./configuration.md)
     - [Fuzzer Configuration Options](./fuzzer_configuration_options.md)
     - [Mutator Options](./mutator_options.md)
+    - [Sanitizer Options](./sanitizer_options.md)
