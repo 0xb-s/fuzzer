@@ -14,6 +14,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
+    
       - uses: actions/checkout@v3
 
 
@@ -22,8 +23,10 @@ jobs:
           wget https://github.com/rust-lang/mdBook/releases/download/v0.4.29/mdbook-v0.4.29-x86_64-unknown-linux-gnu.tar.gz -O - | tar -zx
           chmod +x mdbook
 
+
       - name: Build
         run: ./mdbook build documentation
+
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
