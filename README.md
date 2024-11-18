@@ -1,3 +1,4 @@
+[![Documentation](https://img.shields.io/badge/Documentation-mdBook-blue)](https://0xb-s.github.io/fuzzer/)
 #  Fuzzer 
 
 This project is designed for both synchronous and asynchronous target functions. It allows developers to automatically generate and test various inputs for functions, uncovering potential crashes, bugs, or unexpected behavior.
