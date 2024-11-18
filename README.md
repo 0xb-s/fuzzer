@@ -23,3 +23,6 @@ The primary goal is to help identify and resolve defects in code by subjecting i
 3. **Run the fuzzer** and review its output to identify issues.
 
 
+## Documentation
+
+The summary of the documentation can be found [here](documentation/src/SUMMARY.md).
